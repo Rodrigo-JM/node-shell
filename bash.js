@@ -1,6 +1,6 @@
 process.stdout.write('prompt > ');
 const global = {
-    pwd: process.env.PWD
+    pwd:  require('./pwdTESTTEST/pwdTEST/pwd.js')
 }
 
 process.stdin.on('data', (data) => {
