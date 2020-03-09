@@ -10,10 +10,10 @@ process.stdin.on('data', (data) => {
     
     if (global[cmd] !== undefined) {
         if (typeof global[cmd] === 'function') {
-            let funcs = [...funcArguments]
+            let args = [...funcArguments]
             
-            if (funcs) {
-                funcs.forEach(arg => {
+            if (args) {
+                args.forEach(arg => {
                     global[cmd](arg);
                 })
             } else {
