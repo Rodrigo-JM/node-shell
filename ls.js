@@ -5,8 +5,9 @@ const ls = () => {
         if (err) {
             throw err
         } else {
+            process.stdout.write("\n")
             process.stdout.write(files.join('\n'))
-            process.stdout.write('\nprompt > ')
+            process.stdout.write("\nprompt > ")
         }
     })
 }
